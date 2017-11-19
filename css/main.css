@@ -56,6 +56,9 @@ nav {
     margin: 0 7px;
     cursor: pointer;
 }
+.fa-check-circle {
+    color: #ffa0d2;
+}
 .icon-brand{
     font-size: 20px;
     margin: 10px 185px 10px 235px;
@@ -82,6 +85,10 @@ form {
     width: 40px;
     height: 40px;
     cursor: pointer;
+}
+.feed_style {
+  margin: 15px;  
+    display: inline-block;
 }
 .tweet {
     text-transform: capitalize;
@@ -124,25 +131,29 @@ section {
     padding-right: 40px;
 }
 .news-feed {
-    outline: 1px solid red;
+   /* outline: 1px solid red;*/
+    background-color: #fff;
     width: 500px;
     margin-left: 40px;
-    height: 400px;
+    height: auto;
     position: absolute;
 }
 .tweet-maker {
-    outline: 1px solid green;
-    margin: 15px;
+   /* outline: 1px solid green;*/
+    margin: 0px;
+    padding: 15px;
+    background-color: #ffe5fd;
 }
 .input-tweet {
-    outline: 1px solid yellow;
+    outline: 2px solid #ffaaf8;
     width: 380px;
-   
+    border-radius: 30px;
 }
 .input-icons {
-    outline: 1px solid black;
-    margin-top: 70px;
+   /* outline: 1px solid black;*/
+    margin: 70px 5px 5px 5px;
     height: 30px;
+    float: right;
 }
 .feed-section {
     display: inline-block;
@@ -163,14 +174,22 @@ section {
 .icons-tweet{
     display: inline-block;
     margin: 0px 10px 10px 60px;
+    cursor: pointer;
+    color: #ffa0d2;
+}
+.icons-tweet:hover{
+    color: deeppink;
 }
 .input {
-    outline: 1px solid purple;
+   /* outline: 1px solid purple;*/
+    height: auto;
 }
 .posts {
+    margin: 0px 0 10px 60px;
+    width: 380px;
     padding: 10px;
-    width: 96%;
-    border: 1px solid grey;
+   word-wrap: break-word;
+   /* border: 1px solid grey;*/
 }
 .first-color {
     color: #000;
@@ -182,5 +201,27 @@ section {
     color: red;
 }
 .style {
-    width: 100px;
+    max-width: 200px;
+    width: 100%;
+}
+.style_user_post {
+    display: inline-block;
+    
+}
+.letter_style1 {
+    font-weight: 600;
+}
+.letter_style2 {
+    font-family: cursive;
+    color:  #727782;
+}
+.submit-button {
+    background-color: #ffa0d2;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 7px;
+    float: right;
+    outline: none;
+    margin: 15px;
 }

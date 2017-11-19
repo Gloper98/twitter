@@ -5,6 +5,7 @@
         <title>Twitter</title>
         <link rel="icon" href="assets/images/favicom.png"  type="image/png"> 
         <link rel="stylesheet" href="assets/icons/icomoon/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -27,8 +28,8 @@
                    </form>
                </div>
                <div class="navigator profile">
-               <div class="navigator profile-photo">
-                   <img class="photo" src="assets/images/lauren-2.jpg" alt="profile">
+               <div id ="photo_container" class="navigator profile-photo">
+                   <img id="photograph" class="photo" src="assets/images/lauren-2.jpg" alt="profile">
                </div>
                </div>
                <div class="navigator tweet-box">
@@ -51,15 +52,16 @@
                   <div class="input">
                   <div id="input-write" class="input-tweet" contentEditable=true ></div>
                   
-                  <div class="input-icons"><b id="counter">0</b></div>
+                  <div class="input-icons"><i class="fa fa-check-circle" aria-hidden="true"></i><b id="counter">0</b></div>
                   </div>
                   <div class="icons-feed">
                   <ul class="icons-feed-tools">
                       <li class="icons-tweet"><span class="icon-picture"></span></li>
                       <li class="icons-tweet"><span class="icon-stats-bars2"></span></li>
                       <li class="icons-tweet"><span class="icon-refresh"></span></li>
+                      <li><button id="submit" class="submit-button">Tweet</button></li>
                   </ul>
-                  <button id="submit" class="submit-button">Tweet</button>
+                  
                   </div>
               </div>
               <div  id="maker" class="feeder">

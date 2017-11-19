@@ -12,12 +12,31 @@ window.addEventListener('load', function(event) {
         twitter.setAttribute('class', 'posts');
         var text= tweet.textContent;
         var fecha = new Date();
-        var text_2=document.createTextNode("Día: "+fecha.getDate()+"\nHora: "+(fecha.getHours()+1)+"\nMinuto: "+fecha.getMinutes());
+        var text_2=document.createTextNode("Day: "+fecha.getDate()+"\nHour: "+(fecha.getHours())+"\nMin: "+fecha.getMinutes());
+        var profile =document.getElementById('photo_container');
+        profile.setAttribute('class','feed_style');
+        var text_3 = document.createTextNode("#FreeFifthHarmony");
+        var text_4 =document.createTextNode(".@annyglop23");
+        var user =document.createElement('p');
+        var user_1 =document.createElement('p');
+        var box = document.createElement('div');
+        
         date_c.textContent=text_2.textContent;
         date_c.setAttribute('class','style');
         twitter.textContent = text;
         father.insertBefore(twitter, father.childNodes[0]);
         twitter.appendChild(date_c); 
+        
+        user.textContent=text_3.textContent;
+        user_1.textContent=text_4.textContent;
+        
+         father.insertBefore(box,twitter);
+        box.appendChild(user_1);
+        box.insertBefore(user,user_1);
+        box.insertBefore(profile,user);
+       
+        user.setAttribute('class', 'style_user_post letter_style1');
+        user_1.setAttribute('class','style_user_post letter_style2');
     })
    
     setInterval (
