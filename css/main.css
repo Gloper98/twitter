@@ -167,3 +167,20 @@ section {
 .input {
     outline: 1px solid purple;
 }
+.posts {
+    padding: 10px;
+    width: 96%;
+    border: 1px solid grey;
+}
+.first-color {
+    color: #000;
+}
+.second-color {
+    color: yellow;
+}
+.third-color {
+    color: red;
+}
+.style {
+    width: 100px;
+}
